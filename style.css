@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+.container {
+  display: grid;
+  height: 400px;
+  width: 400px;
+  background-color: antiquewhite;
+  margin: 50px 50px;
+  gap: 2px;
+}
+
+#notification-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.notification-content {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #1890ff;
+  color: white;
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.notification-content p {
+  margin: 0;
+  padding-right: 10px;
+}
+.close-btn {
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+.notification-success {
+  background-color: #52c41a;
+}
+.notification-error {
+  background-color: #f5222d;
+}
+.notification-warning {
+  background-color: #faad14;
+  color: #262626;
+}
+.notification-info {
+  background-color: #1890ff;
+}
+
+.countdownContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 40px;
+  width: 150px;
+}
+
+.countdownContainer .progressBar {
+  height: 50%;
+  width: 100%; /* Bắt đầu với chiều rộng đầy đủ */
+  background-color: green;
+}
